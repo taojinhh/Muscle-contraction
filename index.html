@@ -136,10 +136,11 @@
   .facts details[open] summary::before{content:"－ ";}
   .facts .fc{padding:0 16px 14px;font-size:14px;line-height:1.7;color:#334155;}
   .facts .fc b{color:var(--myosin);}
-  footer{text-align:center;margin-top:24px;font-size:12.5px;color:#94a3b8;}
+  footer{text-align:center;margin-top:24px;font-size:12.5px;color:#94a3b8;line-height:1.6;}
+  footer .copyright{display:block;margin-top:4px;font-weight:700;color:#64748b;}
 </style>
 </head>
-<body>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
 <div class="wrap">
   <header>
     <h1>💪 근육의 수축과 이완</h1>
@@ -151,11 +152,8 @@
   <div class="stage" id="stage" title="클릭하면 다음 단계로 넘어가요">
     <div class="tap-hint">👆 클릭!</div>
     <svg id="svg" viewBox="0 0 900 300" role="img" aria-label="근절 활주 모형">
-      <!-- 배경 밴드 강조 (파스텔) -->
       <g id="bands"></g>
-      <!-- 필라멘트 -->
       <g id="filaments"></g>
-      <!-- 라벨/브래킷 -->
       <g id="labels"></g>
     </svg>
     <div class="legend">
@@ -219,7 +217,10 @@
     </details>
   </div>
 
-  <footer>효양고 · 근육의 수축과 이완 학습기 &nbsp;|&nbsp; 활주설(sliding filament theory) 기반 인터랙티브 모형</footer>
+  <footer>
+    효양고 · 근육의 수축과 이완 학습기 &nbsp;|&nbsp; 활주설(sliding filament theory) 기반 인터랙티브 모형
+    <span class="copyright">All Rights Reserved (무단 전재 및 재배포 금지)</span>
+  </footer>
 </div>
 
 <script>
